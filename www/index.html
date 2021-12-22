@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/toptal.css" />
+    <title>AuoiShop</title>
+</head>
+<body>
+    <div id="container">
+        <div id="tab-content">
+
+        </div>
+    </div>
+    <footer>
+        <ul id="menu">
+            <li id="home-tab-button" class="tab-button active" data-tab="#home-tab">시장</li>
+            <li id="ordered-tab-button" class="tab-button" data-tab="#ordered-tab">주문함</li>
+            <li id="stall-tab-button" class="tab-button" data-tab="#stall-tab">가판대</li>
+            <!-- <li id="search-tab-button" class="tab-button" data-tab="#search-tab">Search</li> -->
+            <!-- <li id="post-tab-button" class="tab-button" data-tab="#add-tab">Post</li> -->
+            <li id="more-tab-button" class="tab-button" data-tab="#more-tab">더보기</li>
+        </ul>
+    </footer>
+    <div id="dev-null" style="display: none"></div>
+    <script src="js/libs/jquery-1.11.1.min.js"></script>
+    <script src="js/libs/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/services/SQLiteStorageService.js"></script>
+    <script type="text/javascript" src="js/services/AuoiApiService.js"></script>
+    <script type="text/javascript" src="js/controllers/MainController.js"></script>
+    <script type="text/javascript" src="js/controllers/HomeController.js"></script>
+    <script type="text/javascript" src="js/controllers/OrderedController.js"></script>
+    <script type="text/javascript" src="js/controllers/StallController.js"></script>
+    <script type="text/javascript" src="js/controllers/MoreController.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
